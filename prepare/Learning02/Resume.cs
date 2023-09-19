@@ -8,10 +8,10 @@ public class Resume
         Console.WriteLine($"Name: {_name}");
         Console.WriteLine("Jobs:");
 
-        // Notice the use of the custom data type "Job" in this loop
+        // using loops to iterate list of jobs
         foreach (Job job in _jobs)
         {
-            // This calls the Display method on each job
+            //Display method on each job
             job.Display();
         }
     }

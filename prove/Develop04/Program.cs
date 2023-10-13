@@ -127,8 +127,8 @@ class Program
                 Console.WriteLine("Get Ready...");
                 
                 listing.ShowSpinner(1000);
-                // listing.DisplayRandomPrompt();
-                // listing.Run();
+                listing.DisplayRandomPrompt();
+                listing.Run();
 
                 List<string> fromUser = new List<string>();
                 string listFromUser = "";

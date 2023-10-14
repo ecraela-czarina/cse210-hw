@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        // [STRETCH] I used the 4-7-8 Breathing Activity which helps calm anxiety.
+
         string initialAction = "";
         while (initialAction != "4")
         {
@@ -93,6 +95,7 @@ class Program
                 {
                     reflect.DisplayQuestion();
                     reflect.ShowSpinner(5000);
+                    Console.WriteLine();
                         
                 }
                 
@@ -114,7 +117,7 @@ class Program
                 ListingActivity listing = new ListingActivity(activityName, activityDescription);
                 listing.DisplayStartingMessage();
                 Console.WriteLine();
-                Console.Write("How long, in seconds, would you like your session? [The minimum is 15 Seconds]: ");
+                Console.Write("How long, in seconds, would you like your session: ");
                 string userInput = Console.ReadLine();
                 int secondsInput = int.Parse(userInput);
                 listing._duration = secondsInput;
@@ -134,7 +137,7 @@ class Program
                 string listFromUser = "";
                 while (listFromUser != "quit")
                 {
-                    // listing.Run();
+                    
                     string userList = Console.ReadLine();
 
                     if (userList != "")
@@ -163,8 +166,8 @@ class Program
 
             else if(action == "4")
             {
-                Console.WriteLine("Thank you for using the Mindfulness Program")
-                initialAction = 4;
+                Console.WriteLine("Thank you for using the Mindfulness Program!");
+                initialAction = "4";
             }
         }
         

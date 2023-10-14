@@ -10,10 +10,10 @@ public class ListingActivity : Activity
 
     public void Run()
     {   
-        DisplayRandomPrompt();
         Console.WriteLine();
         Console.Write("\nYou may begin in...");
         ShowCountDown(5);
+        Console.WriteLine();
     }
 
     public int GetCount()

@@ -44,7 +44,7 @@ public class Activity
         foreach (string s in spinner)
         {
             Console.Write(s);
-            Thread.Sleep(500);
+            Thread.Sleep(800);
             Console.Write("\b \b");
         }
 

@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        List<Students> student = new List<Students>();
+
+        string firstName = "Christine";
+        string lastName = "Dela Cruz";
+
+        
     }
 }

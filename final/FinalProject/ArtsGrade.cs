@@ -1,15 +1,15 @@
-public abstract class ArtsGrade : Students
+public class ArtsGrade : Students
 {
-    private int _artsGrade;
+    private double _artsGrade;
     
 
-    public ScienceGrade(string firstName, string lastName, int artsGrade) : base (firstName, lastName)
+    public ArtsGrade(string firstName, string lastName, double artsGrade) : base (firstName, lastName)
     {
         _artsGrade = artsGrade;
     }
 
-    public abstract int ComputeGrade()
+    public override double ComputeGrade()
     {
-        return _artsGrade * .15;
+        return _artsGrade * 0.15;
     }
 }

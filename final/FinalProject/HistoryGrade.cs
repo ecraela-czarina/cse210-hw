@@ -1,14 +1,14 @@
-public abstract class HistoryGrade : Students
+public class HistoryGrade : Students
 {
-    private int _historyGrade;
+    private double _historyGrade;
     
 
-    public ScienceGrade(string firstName, string lastName, int historyGrade) : base (firstName, lastName)
+    public HistoryGrade(string firstName, string lastName, double historyGrade) : base (firstName, lastName)
     {
         _historyGrade = historyGrade;
     }
 
-    public abstract int ComputeGrade()
+    public override double ComputeGrade()
     {
         return _historyGrade * .15;
     }

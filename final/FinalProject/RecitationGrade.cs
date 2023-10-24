@@ -1,14 +1,14 @@
-public abstract class RecitationGrade : Students
+public class RecitationGrade : Students
 {
-    private int _recitationGrade;
+    private double _recitationGrade;
     
 
-    public ScienceGrade(string firstName, string lastName, int recitationGrade) : base (firstName, lastName)
+    public RecitationGrade(string firstName, string lastName, double recitationGrade) : base (firstName, lastName)
     {
         _recitationGrade = recitationGrade; 
     }
 
-    public abstract int ComputeGrade()
+    public override double ComputeGrade()
     {
         return _recitationGrade * .10;
     }
